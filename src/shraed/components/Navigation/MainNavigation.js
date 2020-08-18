@@ -2,14 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import MainHeader from './MainHeader';
+import NavLinks from './NavLinks';
 import './MainNavigation.css';
-const MainNavigation = () => {
+
+const MainNavigation = (props) => {
   return (
     <MainHeader>
       <button className="main-navigation_menu-btn"></button>
-      <h1 className="main-navigation_title">
-        <Link to="/">Your Places</Link>
-      </h1>
+      <h2 className="main-navigation_title">
+        <Link to="/">YourPlaces</Link>
+      </h2>
+      <nav>
+        <NavLinks />
+      </nav>
     </MainHeader>
   );
 };

@@ -17,14 +17,25 @@
   background: white;
 }
 
-.main-navigation_title {
-  color: white;
+.main-navigation_title a {
+  border: 1px solid transparent;
+  color: #292929;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.main-navigation_title a:hover,
+.main-navigation_title a:active,
+.main-navigation_title a.active {
+  background: #f84f00;
+  border-color: #292929;
+  border-radius: 30%;
+  color: #292929;
 }
 
-.main-navigation_title a {
+/* .main-navigation_title a {
   text-decoration: none;
   color: white;
-}
+} */
 
 .main-navigation_header-nav {
   display: none;
