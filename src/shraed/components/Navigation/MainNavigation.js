@@ -31,7 +31,9 @@ const MainNavigation = (props) => {
           className="main-navigation_menu-btn"
           onClick={openDrawerHandler}
         >
-          <span>...</span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
         <h2 className="main-navigation_title">
           <Link to="/">YourPlaces</Link>
