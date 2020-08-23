@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import Card from '../../shraed/components/UIElements/Card';
 import Button from '../../shraed/components/FormElements/Button';
 import Modal from '../../shraed/components/UIElements/Modal';
+import Map from '../../shraed/components/UIElements/Map';
 import './PlaceItem.css';
+import PlacesList from './PlacesList';
 
 const PlaceItem = (props) => {
   const [showMap, setShowMap] = useState(false);
@@ -23,7 +25,7 @@ const PlaceItem = (props) => {
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          <h2>the MAP !!!</h2>
+          <Map center={props.coordinates} zoom={16} />
         </div>
       </Modal>
       <li className="place-item">
