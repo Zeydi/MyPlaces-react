@@ -32,10 +32,9 @@ const UserPlaces = () => {
       creator: 'u2',
     },
   ];
+
   let id = useParams().userId;
-
   const userPlaes = PLACES.filter((place) => place.creator === id);
-
   return <PlacesList items={userPlaes} />;
 };
 
