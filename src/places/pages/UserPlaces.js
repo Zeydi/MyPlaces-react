@@ -20,7 +20,7 @@ const UserPlaces = () => {
     },
     {
       id: 'p2',
-      title: 'allianz arena stadium',
+      title: 'alli arena stadium',
       description: 'Fc bayer munchen stadium',
       imageUrl:
         'https://fcbayern.com/binaries/content/gallery/fc-bayern/homepage/stadien/allianz-arena/200512_arena.jpg',

@@ -2,6 +2,8 @@ import React from 'react';
 
 import Card from '../../shraed/components/UIElements/Card';
 import PlaceItem from './PlaceItem';
+import Button from '../../shraed/components/FormElements/Button';
+
 import './PlacesList.css';
 
 const PlacesList = (props) => {
@@ -10,7 +12,7 @@ const PlacesList = (props) => {
       <div className="place-list center">
         <Card>
           <h2>Np places found. want to create ?</h2>
-          <button>Share Place</button>
+          <Button to="/places/new">Share Place</Button>
         </Card>
       </div>
     );
