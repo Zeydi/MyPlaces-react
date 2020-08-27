@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect } from 'react';
-// useReducer to manage many states
+
 import { validate } from '../../util/validators';
 import './Input.css';
 
@@ -11,11 +11,12 @@ const inputReducer = (state, action) => {
         value: action.val,
         isValid: validate(action.val, action.validators),
       };
-    case 'TOUCH':
+    case 'TOUCH': {
       return {
         ...state,
         isTouched: true,
       };
+    }
     default:
       return state;
   }
@@ -63,8 +64,8 @@ const Input = (props) => {
       <textarea
         id={props.id}
         rows={props.rows || 3}
-        onBlur={touchHandler}
         onChange={changeHandler}
+        onBlur={touchHandler}
         value={inputState.value}
       />
     );
